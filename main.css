@@ -1,0 +1,131 @@
+:root {
+  /* change this value for the background colour! */
+  --bg-color: #e5e5e5;
+  /* change this value for the starting card colour! */
+  --primary-color: #da4b27;
+  /* change this value for different font! Remember to first update your HTML file */
+  /* see here for more information: https://fonts.google.com/ */
+  --font-family: "Mitr", sans-serif;
+}
+
+/* Things we need:
+1. A selector
+2.1 A rule
+2.2 A rule has two parts, a property and a value 
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+header {
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+}
+
+.card {
+  width: 988px;
+  height: 460px;
+  background-color: var(--primary-color);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 30px;
+
+  border: 2px solid #000000;
+  border-radius: 8px;
+
+  margin: 54px 0px;
+  padding: 24px;
+}
+
+.quote {
+  width: 450px
+
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.quote p {
+  margin: 24px;
+  font-size: 24px;
+}
+
+.quote-author {
+  font-weight: bold;
+}
+
+.image {
+  width: 450px;
+  height: 412px;
+
+  background-image: url("/assets/images/pic4.png");
+  
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+button {
+  width: 247px;
+  background-color: white;
+
+  border: 2px solid #000000;
+
+  box-shadow: -3px 3px 0px #000000;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 50px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background: #000000;
+
+  display: grid;
+  align-self: end;
+  place-items: center;
+
+  line-height: 80px;
+  color: white;
+  font-size: 24px;
+}
