@@ -12,3 +12,5 @@
 - Change all the images
 
 When you're done, share the link to your csb.app with your friends - and to us!
+
+Preview of site --> https://ruux76.csb.app/
